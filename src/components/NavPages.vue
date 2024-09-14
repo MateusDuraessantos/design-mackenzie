@@ -1,54 +1,5 @@
 <template>
     <nav>
-        <div class="blue-bar">
-            <div class="nav-width">
-                <div class="redes-sociais">
-                    <img src="facebook.png">
-                    <img src="twitter.jpg">
-                    <img src="youtube.png">
-                    <img src="linkedin.png">
-                    <img src="instagram.png">
-                </div>
-                <div class="opções">
-                    <p>Aluno e Antigo Aluno</p>
-                    <p>Blog</p>
-                    <p>Biblioteca</p>
-                    <p>Eventos</p>
-                    <p>Mídias / Notícias</p>
-                    <p>Colaboradores</p>
-                    <p>Atendimento</p>
-                </div>
-                <div class="linguagem">
-                    <img src="brasil.png">
-                    <img style="opacity: 0.5;" src="usa.png">
-                    <img style="opacity: 0.5;" src="espanha.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="ground">
-            <div class="nav-width" style="height: 100%;">
-                <span class="logo-mack">
-                    <img class="logo" src="mack_logo.png" alt="Logo Mackenzie">
-
-                    <i>Universidade - Campus Higienópolis</i>
-                </span>
-                <span style="display: flex; align-items: center; gap: 20px;">
-                    <div class="mackStore">Mack Store</div>
-
-                    <b class="internation">INTERNATIONAL AFFAIR</b>
-                </span>
-            </div>
-        </div>
-
-        <div class="red-bar">
-            <div class="cont-red">
-                <div class="nav-button" v-for="(navOption, index) in navOptions" :id="'nav-' + index" :key="index">
-                    {{ navOption }}
-                </div>
-            </div>
-        </div>
-
         <div class="black-bar">
             <div class="nav-width">
 
@@ -64,6 +15,7 @@
                                 <arrow>❯</arrow>
                             </aconra>
                             <div class="subMenu" id="subMenu">
+                                <a @click="scrollToSection('link_inicio')">Início</a>
                                 <a @click="scrollToSection('link_objetivo')">Objetivos</a>
                                 <a @click="scrollToSection('link_matriz')">Matérias | Matriz Curricular</a>
                                 <a @click="scrollToSection('link_predio')">Prédio 9 | Arquitetura e Design</a>
@@ -226,8 +178,8 @@ arrow {
 
 /*  */
 nav {
-    position: sticky;
-    top: -104px;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -534,7 +486,7 @@ nav {
     text-decoration: none;
     color: white;
     height: 80px;
-    font-size: 1.13rem;
+    font-size: 16px;
     font-weight: 400;
     transition: .3s;
     z-index: 3;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header id="link_inicio">
       <p class="global__banner_font design">Design</p>
       <p class="faculdade">
         Faculdade de Arquitetura e Urbanismo | Campus Higienópolis
