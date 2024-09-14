@@ -1,0 +1,23 @@
+{
+  "name": "design-mackenzie",
+  "version": "0.1.0",
+  "description": "Webiste Mackenzie Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+      "@element-plus/icons-vue": "^2.1.0",
+      "element-plus": "^2.3.1",
+      "vue": "^3.2.36",
+      "vue-router": "^4.0.3"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-router": "~5.0.0",
+      "@vue/cli-service": "~5.0.0"
+  }
+}
