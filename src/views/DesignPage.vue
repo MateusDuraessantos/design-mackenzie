@@ -10,32 +10,30 @@
       <img class="banner" src="design/banner.jpg" alt="banner">
     </header>
 
-    <div class="body">
+    <div class="g-section__width">
       <section>
 
         <!-- Objetivos -->
 
         <div id="link_objetivo">
-          <div class="container_objetivo">
-            <div class="aulas__title">
-              <h1 class="title">O que temos como objetivo?</h1>
-            </div>
-          </div>
 
           <div class="objetivo">
             <p class="objetivo__text">
-              &nbsp; O Curso de Bacharelado em Design da FAU-Mackenzie tem como objetivo formar profissionais com
-              competências
-              amplas e habilidades múltiplas para atuar de forma generalista diante das rápidas transformações da
-              sociedade. Com mais de 50 anos de existência, o curso evoluiu e passou a priorizar a abordagem projetual,
-              incorporando tendências contemporâneas e alinhando-se às necessidades do mercado de trabalho.
-              <br>
-              <br>
-              &nbsp; O curso aborda também a metodologia do Design Thinking, que é uma abordagem centrada no usuário para
-              solução
-              de problemas e desenvolvimento de produtos e serviços. O Design Thinking envolve diversas etapas, como a
-              imersão no problema, definição de pontos de vista, ideação, prototipagem e teste. A metodologia é focada em
-              entender as necessidades e desejos do usuário para desenvolver soluções inovadoras e eficientes.
+            <div class="aulas__title">
+              <h1 class="title">O que temos como objetivo?</h1>
+            </div>
+            &nbsp; O Curso de Bacharelado em Design da FAU-Mackenzie tem como objetivo formar profissionais com
+            competências
+            amplas e habilidades múltiplas para atuar de forma generalista diante das rápidas transformações da
+            sociedade. Com mais de 50 anos de existência, o curso evoluiu e passou a priorizar a abordagem projetual,
+            incorporando tendências contemporâneas e alinhando-se às necessidades do mercado de trabalho.
+            <br>
+            <br>
+            &nbsp; O curso aborda também a metodologia do Design Thinking, que é uma abordagem centrada no usuário para
+            solução
+            de problemas e desenvolvimento de produtos e serviços. O Design Thinking envolve diversas etapas, como a
+            imersão no problema, definição de pontos de vista, ideação, prototipagem e teste. A metodologia é focada em
+            entender as necessidades e desejos do usuário para desenvolver soluções inovadoras e eficientes.
             </p>
             <iframe style="background: #1f1f1f; border-radius: 8px; width: 100%; height:100%; min-height: 310px;"
               src=" https://www.youtube.com/embed/zcuPcoQNT4w" title="YouTube video player" frameborder="0"
@@ -79,12 +77,10 @@
 
         <div class="matriz" id="link_matriz">
 
-          <div class="container_objetivo">
-            <div class="aulas__title">
-              <h1 class="title">Matérias | Matriz Curricular <span class="some">- Um pouquinho do que você vai
-                  aprender</span>
-              </h1>
-            </div>
+          <div class="aulas__title">
+            <h1 class="title">Matérias | Matriz Curricular <span class="some">- Um pouquinho do que você vai
+                aprender</span>
+            </h1>
           </div>
           <br>
 
@@ -99,10 +95,10 @@
                     <template #title>
                       <p class="matriz__etapa" style="color: #BDBDBD"><b>{{ index + 1 }}° Semestre</b> - Disciplinas</p>
                     </template>
-                    <span v-for="materia in grade">
+                    <p v-for="materia in grade">
                       {{ materia }}
                       <br>
-                    </span>
+                    </p>
                   </el-collapse-item>
                 </el-collapse>
 
@@ -114,193 +110,222 @@
             <el-tab-pane label="Atividades Acadêmicas" class="navSecond " name="second">
               <el-tabs v-model="activeName" type="card" class="demo-tabs" @tab-click="handleClick">
                 <el-tab-pane label="TCC" name="first">
-
-                  O Trabalho de Conclusão de Curso - TCC- consiste na realização de um trabalho acadêmico, no qual o
-                  aluno desenvolve uma ideia completa, de sua escolha, fundamenta-a teórica e projetualmente e
-                  expõe-na
-                  na forma de um objeto ou serviço (ou de um sistema objeto/serviço).
+                  <p>
+                    O Trabalho de Conclusão de Curso - TCC- consiste na realização de um trabalho acadêmico, no qual o
+                    aluno desenvolve uma ideia completa, de sua escolha, fundamenta-a teórica e projetualmente e
+                    expõe-na
+                    na forma de um objeto ou serviço (ou de um sistema objeto/serviço).
+                  </p>
                   <br>
-                  <br>
-                  O principal objetivo é permitir que o aluno consolide as capacidades profissionais desenvolvidas ao
-                  longo do curso e que podem ser resumidas na capacidade de analisar e propor soluções de projeto para
-                  realidades colocadas no âmbito da cultura material e suas extensões virtuais através da construção
-                  de
-                  sínteses dos conhecimentos pertinentes ao campo profissional.
+                  <p>
+                    O principal objetivo é permitir que o aluno consolide as capacidades profissionais desenvolvidas ao
+                    longo do curso e que podem ser resumidas na capacidade de analisar e propor soluções de projeto para
+                    realidades colocadas no âmbito da cultura material e suas extensões virtuais através da construção
+                    de
+                    sínteses dos conhecimentos pertinentes ao campo profissional.
+                  </p>
 
                 </el-tab-pane>
                 <el-tab-pane label="Estágios" name="second">
-                  O programa de estágio curricular supervisionado (que se submete ao Regulamento Geral de Estágios da
-                  UPM
-                  e à Lei Federal que rege a questão) é obrigatório aos alunos do Curso, que devem cumprir entre o
-                  início
-                  da 1å etapa e o término da 7å etapa, o mínimo de 183 horas de estágio.
+                  <p>
+                    O programa de estágio curricular supervisionado (que se submete ao Regulamento Geral de Estágios da
+                    UPM
+                    e à Lei Federal que rege a questão) é obrigatório aos alunos do Curso, que devem cumprir entre o
+                    início
+                    da 1å etapa e o término da 7å etapa, o mínimo de 183 horas de estágio.
+                  </p>
                   <br>
+                  <p>
+                    O programa é gerido por setorial administrativo, na esfera da Universidade, denominado de Área
+                    Administrativa de Estágio (AAE), que define procedimentos e documentos necessários para a consolidação
+                    do registro dos três agentes envolvidos neste processo: Universidade/Faculdade, aluno e
+                    empresa/profissional autônomo.
+                  </p>
                   <br>
-                  O programa é gerido por setorial administrativo, na esfera da Universidade, denominado de Área
-                  Administrativa de Estágio (AAE), que define procedimentos e documentos necessários para a consolidação
-                  do registro dos três agentes envolvidos neste processo: Universidade/Faculdade, aluno e
-                  empresa/profissional autônomo.
+                  <p>
+                    O estágio é uma atividade muito importante para o estudante de graduação de Design, pois complementa o
+                    seu aprendizado com uma visão do mundo real nos trabalhos prestados nas empresas ou órgãos públicos. A
+                    atividade visa o aprimoramento profissional na sua área de estudo, possibilitando o conhecimento
+                    prático
+                    das matérias teóricas passadas em sala de aula.
+                  </p>
                   <br>
+                  <p>
+                    O estágio de estudante é obrigatório, não configurando relação de emprego, mas com alguns direitos
+                    como
+                    o recebimento de bolsa ou remuneração, se estipulado, cumprimento de carga horária prefixada e
+                    realização de seguro obrigatório contra acidentes, e após 1 ano de estágio, 30 dias de férias
+                    remuneradas. A faculdade conta com uma Coordenação de Estágio que oferece suporte aos alunos antes e
+                    durante o estágio.
+                  </p>
                   <br>
-                  O estágio é uma atividade muito importante para o estudante de graduação de Design, pois complementa o
-                  seu aprendizado com uma visão do mundo real nos trabalhos prestados nas empresas ou órgãos públicos. A
-                  atividade visa o aprimoramento profissional na sua área de estudo, possibilitando o conhecimento
-                  prático
-                  das matérias teóricas passadas em sala de aula.
+                  <p>
+                    O aluno poderá realizar estágio não obrigatório, com os mesmos procedimentos do estágio obrigatório,
+                    mas
+                    sem contar como realização para o cumprimento das 180 horas obrigatórias.
+                  </p>
                   <br>
+                  <p>
+                    O programa conta também com o Relatório de Acompanhamento das Atividades do Estagiário (RAE), fonte
+                    privilegiada para verificação do grau de aderência dos conhecimentos transmitidos ao aluno e da
+                    relação
+                    desses conhecimentos com a prática profissional, tanto do ponto de vista da concedente quanto do
+                    estagiário, retroalimentando a reflexão sobre a eficácia do ensino e da aprendizagem, a partir do
+                    olhar
+                    do mercado de trabalho. Este relatório deve ser apresentado como documento obrigatório para o registro
+                    das horas de estágio cumpridas pelo aluno no curso de Design.
+                  </p>
                   <br>
-                  O estágio de estudante é obrigatório, não configurando relação de emprego, mas com alguns direitos
-                  como
-                  o recebimento de bolsa ou remuneração, se estipulado, cumprimento de carga horária prefixada e
-                  realização de seguro obrigatório contra acidentes, e após 1 ano de estágio, 30 dias de férias
-                  remuneradas. A faculdade conta com uma Coordenação de Estágio que oferece suporte aos alunos antes e
-                  durante o estágio.
+                  <p>Deverão ser disponibilizados os seguintes documentos referentes a todos os estágios realizados:</p>
                   <br>
+                  <p>
+                    Termo de compromisso de Estágio TCE (incluindo o plano de atividades);
+                    Relatório de Acompanhamento das Atividades do Estagiário;
+                    Termo aditivo ao TCE (se houver alguma modificação ou prorrogação em seus termos.
+                    Termo de Rescisão do TCE (se o termo for encerrado antes da data prevista) e
+                    Termo de Realização do Estágio (contendo o período em que o Estágio foi realizado).
+                    Estes documentos serão apresentados ao Coordenador de Estágios e deverão permanecer na Coordenadoria
+                    de
+                    Estágio, cópias dos seguintes documentos:
+                  </p>
                   <br>
-                  O aluno poderá realizar estágio não obrigatório, com os mesmos procedimentos do estágio obrigatório,
-                  mas
-                  sem contar como realização para o cumprimento das 180 horas obrigatórias.
+                  <p>
+                    Relatório de Acompanhamento de Atividades do Estagiário;
+                    Termo de Rescisão do TC ou Termo de Realização do Estágio.
+                    Acompanhando as cópias dos documentos os alunos devem apresentar uma folha de rosto (A4) contendo:
+                  </p>
                   <br>
-                  <br>
-                  O programa conta também com o Relatório de Acompanhamento das Atividades do Estagiário (RAE), fonte
-                  privilegiada para verificação do grau de aderência dos conhecimentos transmitidos ao aluno e da
-                  relação
-                  desses conhecimentos com a prática profissional, tanto do ponto de vista da concedente quanto do
-                  estagiário, retroalimentando a reflexão sobre a eficácia do ensino e da aprendizagem, a partir do
-                  olhar
-                  do mercado de trabalho. Este relatório deve ser apresentado como documento obrigatório para o registro
-                  das horas de estágio cumpridas pelo aluno no curso de Design.
-                  <br>
-                  <br>
-                  Deverão ser disponibilizados os seguintes documentos referentes a todos os estágios realizados:
-                  <br>
-                  <br>
-                  Termo de compromisso de Estágio TCE (incluindo o plano de atividades);
-                  Relatório de Acompanhamento das Atividades do Estagiário;
-                  Termo aditivo ao TCE (se houver alguma modificação ou prorrogação em seus termos.
-                  Termo de Rescisão do TCE (se o termo for encerrado antes da data prevista) e
-                  Termo de Realização do Estágio (contendo o período em que o Estágio foi realizado).
-                  Estes documentos serão apresentados ao Coordenador de Estágios e deverão permanecer na Coordenadoria
-                  de
-                  Estágio, cópias dos seguintes documentos:
-                  <br>
-                  <br>
-                  Relatório de Acompanhamento de Atividades do Estagiário;
-                  Termo de Rescisão do TC ou Termo de Realização do Estágio.
-                  Acompanhando as cópias dos documentos os alunos devem apresentar uma folha de rosto (A4) contendo:
-                  <br>
-                  <br>
-                  nome do aluno;
-                  nº de matrícula;
-                  semestre cursando;
-                  data;
-                  relação do total de horas dos estágios realizados.
+                  <p>
+                    nome do aluno;
+                    nº de matrícula;
+                    semestre cursando;
+                    data;
+                    relação do total de horas dos estágios realizados.
+                  </p>
                 </el-tab-pane>
                 <el-tab-pane label="Atividades Complementares" name="third">
-                  A Coordenadoria de Atividades Complementares e Extensão da FAU atua para organizar e viabilizar as
-                  atividades extensionistas da unidade universitária, dando cumprimento a Resolução 08/2016 - 26 de maio
-                  de 2016 que Regulamenta as Atividades Complementares da Universidade Presbiteriana Mackenzie.
+                  <p>
+                    A Coordenadoria de Atividades Complementares e Extensão da FAU atua para organizar e viabilizar as
+                    atividades extensionistas da unidade universitária, dando cumprimento a Resolução 08/2016 - 26 de maio
+                    de 2016 que Regulamenta as Atividades Complementares da Universidade Presbiteriana Mackenzie.
+                  </p>
                   <br>
+                  <p>
+                    As atividades complementares no Curso de Design orientam-se pelo princípio geral de que a formação do
+                    profissional designer não se restringe exclusivamente aos conteúdos acadêmicos desenvolvidos em sala
+                    de
+                    aula. Isto significa que a formação do designer ultrapassa os muros da academia promovendo a prática
+                    de
+                    uma aprendizagem contínua, constante e complementar à formação profissional. O programa de atividades
+                    complementares promove a participação dos estudantes em atividades de ensino, pesquisa e extensão e,
+                    para concluir sua formação, o aluno precisa completar um mínimo de 180 horas de atividades
+                    complementares, sendo necessário um mínimo de 30 horas em cada modalidade, a saber, ensino, pesquisa e
+                    extensão.
+                  </p>
                   <br>
-                  As atividades complementares no Curso de Design orientam-se pelo princípio geral de que a formação do
-                  profissional designer não se restringe exclusivamente aos conteúdos acadêmicos desenvolvidos em sala
-                  de
-                  aula. Isto significa que a formação do designer ultrapassa os muros da academia promovendo a prática
-                  de
-                  uma aprendizagem contínua, constante e complementar à formação profissional. O programa de atividades
-                  complementares promove a participação dos estudantes em atividades de ensino, pesquisa e extensão e,
-                  para concluir sua formação, o aluno precisa completar um mínimo de 180 horas de atividades
-                  complementares, sendo necessário um mínimo de 30 horas em cada modalidade, a saber, ensino, pesquisa e
-                  extensão.
+                  <p>Regulamento de Atividades Complementares</p>
                   <br>
+                  <p>Atividades Complementares:</p>
                   <br>
-                  Regulamento de Atividades Complementares
+                  <p>
+                    Informações e Tutoriais, acesse:
+                    TIA > Moodle > Atividades Complementares
+                  </p>
                   <br>
+                  <p>
+                    Siga-nos no Facebook:
+                    @acfaumackenzie
+                    @topicosespeciaisfaumack
+                  </p>
                   <br>
-                  Atividades Complementares:
+                  <p>
+                    Siga-nos no Instagram:
+                    @ac.faumack
+                  </p>
                   <br>
-                  <br>
-                  Informações e Tutoriais, acesse:
-                  TIA > Moodle > Atividades Complementares
-                  <br>
-                  <br>
-                  Siga-nos no Facebook:
-                  @acfaumackenzie
-                  @topicosespeciaisfaumack
-                  <br>
-                  <br>
-                  Siga-nos no Instagram:
-                  @ac.faumack
-                  <br>
-                  <br>
-                  Contatos:
-                  fau.extensao@mackenzie.br
-                  Coordenadora de Extensão
-                  Professora Ms.ª Ana Paula Calvo
+                  <p>
+                    Contatos:
+                    fau.extensao@mackenzie.br
+                    Coordenadora de Extensão
+                    Professora Ms.ª Ana Paula Calvo
+                  </p>
                 </el-tab-pane>
                 <el-tab-pane label="Atividades de Extensão" name="fourth">
-                  A Coordenadoria de Atividades Complementares e Extensão da FAU atua para organizar e viabilizar as
-                  atividades extensionistas da unidade universitária, dando cumprimento a Resolução 05/2012 - 13 de
-                  fevereiro de 2012 que regulamenta a Extensão da Universidade Presbiteriana Mackenzie.
+                  <p>
+                    A Coordenadoria de Atividades Complementares e Extensão da FAU atua para organizar e viabilizar as
+                    atividades extensionistas da unidade universitária, dando cumprimento a Resolução 05/2012 - 13 de
+                    fevereiro de 2012 que regulamenta a Extensão da Universidade Presbiteriana Mackenzie.
+                  </p>
                   <br>
+                  <p>
+                    Esta Coordenadoria está comprometida com uma política de extensão que contemple os seguintes aspectos:
+                    a) que se harmonize com o pensamento da Universidade Presbiteriana Mackenzie, em seus aspectos gerais;
+                    b) que possa envolver alunos de graduação e de pós-graduação; c) que traga contribuições importantes
+                    para o contexto social; d) que possa contribuir para o desenvolvimento qualitativo do corpo card,
+                    como também dos próprios alunos envolvidos em projetos extensionistas específicos, possibilitando a
+                    esses, tanto a vivência profissional quanto a articulação desta com os conhecimentos teóricos e
+                    práticos
+                    apreendidos no Curso.
+                  </p>
                   <br>
-                  Esta Coordenadoria está comprometida com uma política de extensão que contemple os seguintes aspectos:
-                  a) que se harmonize com o pensamento da Universidade Presbiteriana Mackenzie, em seus aspectos gerais;
-                  b) que possa envolver alunos de graduação e de pós-graduação; c) que traga contribuições importantes
-                  para o contexto social; d) que possa contribuir para o desenvolvimento qualitativo do corpo card,
-                  como também dos próprios alunos envolvidos em projetos extensionistas específicos, possibilitando a
-                  esses, tanto a vivência profissional quanto a articulação desta com os conhecimentos teóricos e
-                  práticos
-                  apreendidos no Curso.
+                  <p>
+                    É nosso objetivo promover atividades que exponham, evidenciem ou discutam assuntos relacionados à
+                    Arquitetura, ao Urbanismo, no âmbito nacional e internacional, para nossa comunidade acadêmica e para
+                    pessoas da sociedade, com especial interesse nestes assuntos.
+                  </p>
                   <br>
-                  <br>
-                  É nosso objetivo promover atividades que exponham, evidenciem ou discutam assuntos relacionados à
-                  Arquitetura, ao Urbanismo, no âmbito nacional e internacional, para nossa comunidade acadêmica e para
-                  pessoas da sociedade, com especial interesse nestes assuntos.
-                  <br>
-                  <br>
-                  Contatos:
-                  fau.extensao@mackenzie.br
-                  Coordenadora de Extensão
-                  Professora Ms.ª Ana Paula Calvo
+                  <p>
+                    Contatos:
+                    fau.extensao@mackenzie.br
+                    Coordenadora de Extensão
+                    Professora Ms.ª Ana Paula Calvo
+                  </p>
                 </el-tab-pane>
               </el-tabs>
             </el-tab-pane>
             <el-tab-pane label="Projeto Pedagógico" name="third">
               <div class="container__collapse">
-                O aluno de graduação tem oportunidade de participar da Pesquisa no âmbito do Programa Institucional de
-                Iniciação Científica (PIBIC ) ou de forma voluntaria. A UPM oferece o PIBIC Mackenzie que se destina a
-                complementar o ensino de graduação, permitindo aos estudantes a oportunidade de desvendarem como se
-                processa
-                a
-                geração do saber e como o conhecimento científico é adquirido. Esses objetivos são alcançados pela
-                participação do aluno nas atividades práticas e teóricas no ambiente de pesquisa, sob a orientação de um
-                professor-pesquisador. A efetivação e consolidação da boa pesquisa em nossa Universidade é uma questão
-                prioritária de nossa Reitoria, e é apoiada pelo Instituto Presbiteriano Mackenzie que tem disponibilizado
-                as
-                bolsas de Iniciação Científica para os nossos alunos-pesquisadores, alem de bolsas advindas do CNPq. O
-                edital
-                do Programa PBIC Mackenzie ocorre uma vez por ano, entre os meses de fevereiro e março, com início das
-                atividades em agosto.
+                <p>
+                  O aluno de graduação tem oportunidade de participar da Pesquisa no âmbito do Programa Institucional de
+                  Iniciação Científica (PIBIC ) ou de forma voluntaria. A UPM oferece o PIBIC Mackenzie que se destina a
+                  complementar o ensino de graduação, permitindo aos estudantes a oportunidade de desvendarem como se
+                  processa
+                  a
+                  geração do saber e como o conhecimento científico é adquirido. Esses objetivos são alcançados pela
+                  participação do aluno nas atividades práticas e teóricas no ambiente de pesquisa, sob a orientação de um
+                  professor-pesquisador. A efetivação e consolidação da boa pesquisa em nossa Universidade é uma questão
+                  prioritária de nossa Reitoria, e é apoiada pelo Instituto Presbiteriano Mackenzie que tem disponibilizado
+                  as
+                  bolsas de Iniciação Científica para os nossos alunos-pesquisadores, alem de bolsas advindas do CNPq. O
+                  edital
+                  do Programa PBIC Mackenzie ocorre uma vez por ano, entre os meses de fevereiro e março, com início das
+                  atividades em agosto.
+                </p>
                 <br>
                 <br>
-                Outras oportunidades de participar da Iniciação Cientifica são oferecidas por meio de agências externas
-                como
-                a
-                FAPESP.
+                <p>
+                  Outras oportunidades de participar da Iniciação Cientifica são oferecidas por meio de agências externas
+                  como
+                  a
+                  FAPESP.
+                </p>
                 <br>
                 <br>
-                Para maiores informações procure a Coordenadoria de Pesquisa da FAU.
+                <p>Para maiores informações procure a Coordenadoria de Pesquisa da FAU.</p>
                 <br>
                 <br>
-                Contatos:
-                Prédio 10 (Chamberlain), 1° andar - sala 101
+                <p>
+                  Contatos:
+                  Prédio 10 (Chamberlain), 1° andar - sala 101
+                </p>
                 <br>
                 <br>
-                Coordenadora de Pesquisa
-                Prof.ª Dr.ª Eunice Abascal
-                Telefone: +55 11 2766-7068
-                E-mail: fau.pesquisa@mackenzie.br
+                <p>
+                  Coordenadora de Pesquisa
+                  Prof.ª Dr.ª Eunice Abascal
+                  Telefone: +55 11 2766-7068
+                  E-mail: fau.pesquisa@mackenzie.br
+                </p>
               </div>
             </el-tab-pane>
           </el-tabs>
@@ -350,10 +375,10 @@
                 <button class="arrow" id="right" @click="arrowCarrrossel('next')">›</button>
               </div>
               <div class="carrossel__options">
-                <span v-for="(cardsInfo, index) in carrossel" :key="index">
+                <div v-for="(cardsInfo, index) in carrossel" :key="index">
                   <img @click="changeCarrossel(index)" :id="'carrossel_' + index" class="carrossel__options-img"
                     :src="'design/carrossel/' + cardsInfo[0]">
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -849,18 +874,8 @@ export default {
 }
 
 section {
-
-  width: calc(100% - 6vw);
-}
-
-@media only screen and (min-width:1981px) {
-
-  section {
-
-    width: 80%;
-    min-width: 1860px;
-  }
-
+  width: 100%;
+  max-width: 1400px;
 }
 
 
@@ -903,7 +918,7 @@ section {
   right: 30px;
   top: 30px;
   background: none;
-  font-size: 1.8rem;
+  font-size: 28px;
   color: white;
   border: none;
   cursor: pointer;
@@ -914,6 +929,7 @@ header {
   cursor: default;
   border-bottom: 2px solid var(--red-mack);
   height: calc(100vh - 148px);
+  z-index: 3;
 }
 
 .banner {
@@ -936,16 +952,11 @@ header {
   bottom: 50px;
   font-weight: 400;
   z-index: 2;
-  font-size: 1.13rem;
+  font-size: 18px;
   text-align: center;
 }
 
 /* O que temos como bjetivo */
-
-#link_objetivo {
-  width: 80%;
-  margin: auto;
-}
 
 .objetivo {
   display: grid;
@@ -956,7 +967,12 @@ header {
 }
 
 .objetivo__text {
-  font-size: 1rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.objetivo__text .aulas__title {
+  margin-bottom: 20px;
 }
 
 /* Prédio */
@@ -964,7 +980,7 @@ header {
 .predio {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 40vw;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;
   z-index: 3;
@@ -977,7 +993,7 @@ header {
 
 .predio__description {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 20px;
   overflow-y: scroll;
   padding-right: 20px;
@@ -990,16 +1006,18 @@ header {
   flex-direction: column;
   z-index: 3;
   position: relative;
-  gap: 12px;
+  height: max-content;
+  outline: 14px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
 }
 
 .carrossel__description {
   position: absolute;
-  margin-left: 1vw;
-  margin-top: 1vw;
+  margin-left: 12px;
+  margin-top: 12px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   border-radius: 55px;
   padding: 4px 16px;
@@ -1011,8 +1029,7 @@ header {
   align-items: center;
   position: relative;
   z-index: 2;
-  height: 24vw;
-  min-height: 500px;
+  height: 500px;
 }
 
 .container-predio {
@@ -1020,7 +1037,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
   margin: auto;
 }
 
@@ -1061,22 +1077,24 @@ header {
   flex-wrap: wrap;
   width: 100%;
   gap: 10px;
-  padding-bottom: 10px;
   overflow: auto;
+  padding: 12px;
 }
 
 .carrossel__options-img {
   border-radius: 6px;
   width: 100%;
-  height: 5vw;
+  height: 100%;
   min-height: 80px;
   cursor: pointer;
   object-fit: cover;
   opacity: 0.5;
+  transition: .2s;
 }
 
 .carrossel__options-img:hover {
   opacity: 1;
+  transition: .2s;
 }
 
 .arrow {
@@ -1118,12 +1136,12 @@ header {
 
 .matriz {
   padding-top: 160px;
-  width: 70%;
   margin: auto;
+  max-width: 1200px;
 }
 
 .matriz__etapa {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .container__collapse {
@@ -1131,12 +1149,6 @@ header {
 }
 
 /* Laboratórios */
-
-.laboratorios {
-  width: 70%;
-  margin: auto;
-
-}
 
 .laboratorio__container {
   position: relative;
@@ -1151,12 +1163,12 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
-  font-size: 1.13rem;
+  font-size: 18px;
   border-radius: 100px;
   width: 100%;
   cursor: pointer;
   position: relative;
-  height: 7.4vw;
+  height: 145px;
   min-height: 120px;
 
 }
@@ -1221,10 +1233,10 @@ header {
 
 .horarios_absolute {
   z-index: 2;
+  width: 100%;
   gap: 20px;
   display: flex;
   flex-direction: column;
-  width: 70%;
 }
 
 .coordenadores {
@@ -1243,6 +1255,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  font-size: 16px;
   padding: 16px;
 }
 
@@ -1259,8 +1272,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: max-content;
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 
@@ -1319,7 +1331,7 @@ header {
   gap: 6px;
   text-align: center;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .premiacao__2 img {
@@ -1344,7 +1356,6 @@ header {
 .docentes {
   position: relative;
   margin-bottom: 240px;
-  width: 90%;
   margin: auto;
   margin-bottom: 200px;
 
@@ -1375,7 +1386,9 @@ header {
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+.card__infos p {
+  font-size: 16px;
+}
 
 .card__infos {
   border-radius: 0 0 8px 8px;
@@ -1392,7 +1405,7 @@ header {
 .card__name {
   font-weight: 600;
   min-height: 38px;
-  line-height: 1.2rem;
+  line-height: 20px;
   color: #828282;
 }
 
@@ -1421,7 +1434,7 @@ header {
   flex-wrap: wrap;
   color: #828282;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
   width: 100%;
   overflow: hidden;
   transition: .1s;
@@ -1459,10 +1472,6 @@ header {
 
 @media only screen and (max-width: 1700px) {
 
-  /* Objetivos */
-  #link_objetivo {
-    width: 100%;
-  }
 
   .container-predio {
     width: 100%;
@@ -1473,16 +1482,9 @@ header {
   .docentes__grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  .laboratorios {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 1700px) {
-  .horarios_absolute {
-    width: 100%;
-  }
 
   .matriz,
   .premiacoes__container {
@@ -1599,7 +1601,7 @@ header {
   }
 
   .card__email {
-    line-height: 1rem;
+    line-height: 16px;
   }
 
   .card__header {
@@ -1680,11 +1682,6 @@ header {
 
   .laboratorios__card {
     min-height: 100px;
-  }
-
-  section {
-    width: calc(100% - 40px);
-
   }
 
   .card--bacharelado,
@@ -1771,7 +1768,7 @@ header {
     gap: 0;
   }
 
-  .grafismo {
+  .grafismo {  
     margin-bottom: 22px;
   }
 }
@@ -1785,7 +1782,7 @@ header {
 /* Primary Nav */
 
 .el-tabs__item {
-  font-size: 1rem;
+  font-size: 16px;
   transition: .2s;
   font-weight: 400;
 }
@@ -1793,6 +1790,10 @@ header {
 .el-tabs__item:hover {
   color: #CC141D;
   transition: .2s;
+}
+
+.el-tabs__item {
+  font-weight: 600;
 }
 
 .el-tabs__item.is-active {

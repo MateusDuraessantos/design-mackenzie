@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="container">
+        <!-- <div class="container">
             <h3>Outros Sites</h3>
             <div class="colums">
                 <p>
@@ -49,7 +49,7 @@
                     <br> TV Web Mackenzie
                 </p>
                 <p>
-                    <br> Sociais e Culturais:
+                    Sociais e Culturais:
                     <br>
                     <br> Capelania
                     <br> Centro Histórico e Cultural
@@ -189,7 +189,7 @@
                     <br> Hospital Evangélico
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <div class="rodape">
             <div class="rodape__content">
@@ -210,16 +210,21 @@ export default {
 footer {
     font-weight: 400;
     border-top: 2px solid #CC141D;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     background-image: url('../../public/footer.jpg');
+    background-size: cover;
     position: relative;
     z-index: 2;
 }
 
+footer p {
+  font-size: 14px;
+}
+
 h3 {
-    font-size: 1.8rem;
+    font-size: 28px;
     margin-bottom: 50px;
 }
 
@@ -256,7 +261,7 @@ h3 {
 }
 
 .colums {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .footer__img {
@@ -286,7 +291,7 @@ h3 {
     }
 
     .container {
-        font-size: 0.75rem;
+        font-size: 12px;
         width: calc(100% - 40px);
     }
 
@@ -299,16 +304,16 @@ h3 {
     }
 
     .rodape__content {
-        font-size: 0.75rem;
+        font-size: 12px;
     }
 
     .colums {
-        font-size: 0.8rem;
-        line-height: 1rem;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
 }

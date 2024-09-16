@@ -64,9 +64,8 @@ body {
   overflow-x: hidden;
 }
 
-.body {
-  display: flex;
-  justify-content: center;
+p {
+  font-size: 16px;
 }
 
 :root {
@@ -84,6 +83,15 @@ header {
   position: relative;
   color: white;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.g-section__width {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1400px;
+  width: calc(100% - 40px);
 }
 
 /* Botão flutuante */
@@ -104,6 +112,7 @@ header {
   bottom: 40px;
   right: 60px;
   z-index: 4;
+  overflow: hidden;
 }
 
 .phone__icon {
@@ -122,7 +131,7 @@ header {
 }
 
 a {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .phone:hover p {
@@ -133,7 +142,7 @@ a {
 }
 
 .phone:hover {
-  width: 130px;
+  width: 140px;
   background: #AF1816;
   opacity: 1;
   transition: .3s;
@@ -144,14 +153,12 @@ a {
 .blue_btn,
 .red_btn,
 .black_btn {
-  min-height: 36px;
-  max-height: 60px;
-  height: 2.6vw;
-  padding: 0 40px;
+  height: 36px;
+  padding: 0 20px;
   border: none;
   border-radius: 60px;
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   transition: .3s;
   cursor: pointer;
@@ -213,7 +220,7 @@ a {
 }
 
 .title {
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
 hr {
@@ -240,16 +247,20 @@ textarea,
 select {
   outline: none;
   resize: none;
-  outline: 2px solid transparent;
   transition: .2s;
-  border: 4px solid transparent;
+  border: 2px solid transparent !important;
 }
 
 input:focus,
+textarea:focus,
 select:focus,
-filter:focus {
+filter:focus,
+input:hover,
+textarea:hover,
+select:hover,
+filter:hover {
   box-shadow: 0 0 16px rgb(183, 0, 0) !important;
-  border: 4px solid #EB0029 !important;
+  border: 2px solid #EB0029 !important;
   transition: .2s;
 }
 
@@ -264,11 +275,10 @@ filter:focus {
   padding-right: 10px;
   color: white;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   border: none;
-  line-height: 1.6rem;
+  line-height: 26px;
   height: fit-content;
-  min-height: 2.8vw;
 }
 
 .el-collapse,
@@ -288,7 +298,7 @@ filter:focus {
 .el-collapse-item__content {
   color: white;
   padding: 20px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -299,7 +309,7 @@ filter:focus {
 .mensalidade {
   width: 100%;
   min-height: 300px;
-  font-size: 1.8rem;
+  font-size: 28px;
   color: white;
   display: flex;
   gap: 40px;
@@ -343,15 +353,15 @@ filter:focus {
 }
 
 .mensalidade__valor {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .mensalidade__preco {
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
 .mensalidade__gostou {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -365,14 +375,14 @@ filter:focus {
 @media only screen and (min-width: 1420px) {
   html {
     font-size: 22px;
-    line-height: 1.6rem;
+    line-height: 26px;
   }
 }
 
 @media only screen and (max-width: 1980px) {
 
   .mensalidade__gostou {
-    font-size: 1.4rem;
+    font-size: 22px;
   }
 
 }
@@ -380,14 +390,14 @@ filter:focus {
 @media only screen and (max-width: 1420px) {
   html {
     font-size: 20px;
-    line-height: 1.6rem;
+    line-height: 26px;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 16px;
-    line-height: 1.6rem;
+    line-height: 26px;
   }
 }
 
@@ -466,7 +476,7 @@ filter:focus {
   }
 
   .mensalidade__gostou {
-    font-size: 1.4rem;
+    font-size: 22px;
   }
 
   .mensalidade span {

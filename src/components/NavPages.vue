@@ -35,6 +35,7 @@
                             </aconra>
 
                             <div class="subMenu" id="subMenu">
+                                <a @click="scrollToSection('link_inicio_matricula')">Início</a>
                                 <a @click="scrollToSection('link_aulas')">Início das Aulas</a>
                                 <a @click="scrollToSection('link_matriculas')">Matrículas</a>
                                 <a @click="scrollToSection('link_bolsa')">Setor de bolsas</a>
@@ -137,7 +138,7 @@ export default {
     top: 66px;
     flex-direction: column;
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 16px;
     background: #1f1f1f;
     border-radius: 8px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
@@ -151,11 +152,9 @@ export default {
     text-decoration: none;
     color: white;
     transition: .2s;
-    min-height: 64px;
-    border-bottom: 1px solid #4b4b4b;
+    border-bottom: 1px solid #2e2e2e;
     cursor: pointer;
-    padding: 0.6vw 1.4vw;
-    padding-right: 60px;
+    padding: 10px 22px;
 
 }
 
@@ -173,7 +172,7 @@ aconra {
 arrow {
     transform: rotate(90deg);
     width: max-content;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 /*  */
@@ -236,7 +235,7 @@ nav {
     width: 100%;
     white-space: nowrap;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 12px;
 }
 
 
@@ -250,7 +249,7 @@ nav {
     justify-content: space-between;
     background: #05547f;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 12px;
     height: 34px;
     width: 100%;
 }
@@ -300,13 +299,12 @@ nav {
 .nav-width {
     display: flex;
     align-items: center;
-    width: calc(100% - 200px);
+    width:100%;
     justify-content: space-between;
     position: relative;
     z-index: 3;
     align-items: center;
     margin: auto;
-
 }
 
 .logo-mack {
@@ -316,7 +314,7 @@ nav {
 }
 
 .logo-mack i {
-    font-size: 0.8rem;
+    font-size: 12px;
 }
 
 
@@ -334,7 +332,7 @@ nav {
 }
 
 .internation {
-    font-size: 0.75rem;
+    font-size: 12px;
 }
 
 .mackStore {
@@ -343,7 +341,7 @@ nav {
     padding: 0 26px;
     height: 33px;
     color: var(--red-mack);
-    font-size: 0.8rem;
+    font-size: 12px;
     background: white;
     border-radius: 50px;
 }
@@ -388,7 +386,7 @@ nav {
     .nav-button,
     .logo-mack i,
     .opções {
-        font-size: 0.62rem;
+        font-size: 12px;
     }
 }
 
@@ -452,7 +450,7 @@ nav {
     .dropdown-link {
         padding-left: 36px;
         height: 56px;
-        font-size: 1rem;
+        font-size: 16px;
     }
 
 
@@ -522,7 +520,7 @@ nav {
     text-decoration: none;
     height: 40px;
     color: #8A8A8A;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .el-dropdown-menu__item:hover {
@@ -601,7 +599,7 @@ nav {
         padding-left: 36px;
         border: none;
         background: #9c9c9c36;
-        font-size: 1rem;
+        font-size: 16px;
         margin: 4px 0;
     }
 
@@ -664,7 +662,7 @@ nav {
         top: 12px;
         z-index: 3;
         color: gray;
-        font-size: 1.8rem;
+        font-size: 28px;
         background: none;
         border: none;
         transition: .2s;
